@@ -14,12 +14,164 @@
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Rubik+Mono+One&display=swap" rel="stylesheet">
 
     <style>
-        @import "https://fonts.googleapis.com/css2?family=Inconsolata&family=Rubik+Mono+One&display=swap";p{animation:pointer_animation infinite step-end 700ms}*,::after,::before{padding:0;margin:0;box-sizing:border-box;border:none;font-family:'Inconsolata',monospace}:root{--dark-color:#000;--text-color:#9c88ef}html{font-size:14pt}.pointer{background-color:var(--text-color);display:inline-block}.content{height:100vh;width:100%;display:flex;align-items:center;justify-content:center;flex-direction:column}.section-base{width:100%;height:100vh;color:var(--text-color);padding:0 3rem 40vh;text-align:center}.star{position:absolute;background-color:#fff;border-radius:50%}.stars{position:absolute;top:0;left:0;width:100%;height:100%;background-image:radial-gradient(ellipse at top,transparent 0%,var(--dark-color)),radial-gradient(ellipse at bottom,var(--dark-color),rgba(145,233,255,0.2)),repeating-linear-gradient(220deg,#000 0px,#000 1px,transparent .5px,transparent .5px),repeating-linear-gradient(180deg,#000 0px,#000 1px,transparent 1px,transparent 1px),repeating-linear-gradient(148deg,#000 0px,#000 1px,transparent 1px,transparent 1px);z-index:-1}#section1 .content{transition:all 2s ease-out;gap:2rem}#section1 .material-symbols-outlined{font-size:30pt;animation:icon_effect linear 1s infinite}#count{font-size:30pt;font-weight:700}#section0 .content{gap:2.5rem}#section0 button{font-size:1rem;padding:.5rem 2rem;background-color:rgba(156,136,239,0.13);border:#9c88ef .05rem solid;border-radius:.5rem;color:#9c88ef;transition:background-color 300ms ease-in-out}#section0 button:active{transition:none;background-color:rgba(156,136,239,0.26)}#section0 .writerEffectOutput{font-size:25pt}#section0 .button-container{height:2rem}@keyframes twinkling{0%{opacity:0}50%{opacity:1}100%{opacity:0}}@keyframes icon_effect{0%{opacity:.6}50%{opacity:1}100%{opacity:.6}}
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Rubik+Mono+One&display=swap');
+
+        p {
+            animation: pointer_animation infinite step-end 700ms;
+        }
+
+        *,
+        *::after,
+        *::before {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            border: none;
+            font-family: 'Inconsolata', monospace;
+        }
+
+        :root {
+            --dark-color: #000;
+            --text-color: #9c88ef;
+        }
+
+        html {
+            font-size: 14pt;
+        }
+
+        .content {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .section-base {
+            width: 100%;
+            height: 100vh;
+            color: var(--text-color);
+            padding: 0 3rem 40vh;
+            text-align: center;
+        }
+
+        .star {
+            position: absolute;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+
+        .stars {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                    radial-gradient(
+                            ellipse at top,
+                            transparent 0%,
+                            var(--dark-color)
+                    ),
+                    radial-gradient(
+                            ellipse at bottom,
+                            var(--dark-color),
+                            rgba(145, 233, 255, 0.2)
+                    ),
+                    repeating-linear-gradient(
+                            220deg,
+                            rgb(0, 0, 0) 0px,
+                            rgb(0, 0, 0) 1px,
+                            transparent .5px,
+                            transparent .5px
+                    ),
+                    repeating-linear-gradient(
+                            180deg,
+                            rgb(0, 0, 0) 0px,
+                            rgb(0, 0, 0) 1px,
+                            transparent 1px,
+                            transparent 1px
+                    ),
+                    repeating-linear-gradient(
+                            148deg,
+                            rgb(0, 0, 0) 0px,
+                            rgb(0, 0, 0) 1px,
+                            transparent 1px,
+                            transparent 1px
+                    );
+            z-index: -1;
+        }
+        #section1 .content {
+            transition: all 2s ease-out;
+            gap: 2rem;
+        }
+
+        #section1 .material-symbols-outlined {
+            font-size: 30pt;
+            animation: icon_effect linear 1s infinite;
+        }
+
+        #count {
+            font-size: 30pt;
+            font-weight: bold;
+        }
+        #section0 .content {
+            gap: 2.5rem;
+        }
+
+        #section0 button {
+            font-size: 1rem;
+            padding: .5rem 2rem;
+            background-color: rgba(156, 136, 239, 0.13);
+            border: #9c88ef 0.05rem solid;
+            border-radius: 0.5rem;
+            color: #9c88ef;
+            transition: background-color 300ms ease-in-out;
+        }
+        #section0 button:active {
+            transition: none;
+            background-color: rgba(156, 136, 239, 0.26);
+        }
+
+        #section0 .writerEffectOutput {
+            font-size: 25pt;
+        }
+
+        #section0 .button-container {
+            height: 2rem;
+        }
+        @keyframes twinkling {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+
+        @keyframes icon_effect {
+            0% {
+                opacity: .6;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: .6;
+            }
+        }
+
     </style>
 
-    <title>Saudação</title>
+    <title>Flowers</title>
 </head>
 <body>
+    <audio src="./assets/effect.mp3" typeof="audio/mpeg" autoplay loop></audio>
     <section id="section0" class="section-base" style="display: block">
         <div class="stars"></div>
 
@@ -58,7 +210,166 @@
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
-        const data={title:"Uma Can\xE7\xE3o de Esperan\xE7a no Sil\xEAncio Estrelado",manifest:"Do artista, para sua Inspira\xE7\xE3o."};let writerController=!0;$(document).ready(function(){const a=[$("#section0").children(".content"),$("#section1").children(".content"),$("#section2").children(".content"),$("#section3").children(".content")],b=new StarsManager,c=new ChangeSectionManager("section0",a[0],b);c.add("section0",a[0]),c.add("section1",a[1]),c.add("section2",a[2]),c.add("section3",a[3]),c.onChange("section1","open",()=>{const b=$(a[1]).find("#count"),d=setInterval(()=>{let a=parseInt(b.text());0===a?(clearInterval(d),c.change("section1","section2")):(a--,b.text(a))},1e3)}),c.onChange("section2","open",()=>{writerEffect($(a[2]).find(".writerEffectOutput"),data.manifest,80,()=>{setTimeout(()=>{window.location.href="/flower.html"},500)})});try{writerEffect($(a[0]).find(".writerEffectOutput"),data.title,80)}catch(a){console.log("finish!")}new HandleButtonEvents($(a[0]).find("button"),c)});function writerEffect(a,b,c,d=null){let e=0;const f=()=>{e<b.length&&writerController?(a.append(b.charAt(e)),e++,setTimeout(f,c)):null!==d&&d()};f()}class HandleButtonEvents{constructor(a,b){this.button=a,this.manager=b,$(this.button).click(this.onClick.bind(this))}onClick(){this.manager.change("section0","section1")}}class ChangeSectionManager{constructor(a,b,c){this.sections={},this.sections[a]=b.parent(),this.starManager=c,c.createStars(200,this.sections[a])}add(a,b){a in this.sections||(this.sections[a]=b.parent())}change(a,b){const c=this.sections[a],d=this.sections[b];c.css("display","none"),this.starManager.removeStars(c),this.starManager.createStars(200,d),d.css("display","block")}onChange(a,b,c){let d=this.sections[a].get(0);new MutationObserver(a=>{for(let e of a)if("attributes"===e.type&&"style"===e.attributeName){const a=$(d).css("display");"close"===b?"none"===a&&c():"open"===b?"block"===a&&c():void 0}}).observe(d,{attributes:!0,childList:!0,subtree:!0,attributeFilter:["style"]})}}class StarsManager{removeStars(a){$(a).find(".star").remove()}createStars(a,b){for(let c=0;c<a;c++){const a=3*Math.random(),c=99*Math.random(),d=99*Math.random(),e=3*Math.random()+1,f=$("<div class=\"star\"></div>");f.css({width:`${a}px`,height:`${a}px`,top:`${d}%`,left:`${c}%`,animation:`twinkling ${e}s linear infinite`}),$(b.find(".stars")).append(f)}}}
+        const data = {
+            title: 'Uma Canção de Esperança no Silêncio Estrelado',
+            manifest: 'Do artista, para sua Inspiração.'
+        }
+        let writerController = true
+
+        $(document).ready(function () {
+            const section = [
+                $('#section0').children('.content'),
+                $('#section1').children('.content'),
+                $('#section2').children('.content'),
+                $('#section3').children('.content')
+            ]
+            const starManager = new StarsManager()
+            const manager = new ChangeSectionManager('section0', section[0], starManager)
+
+            manager.add('section0', section[0])
+            manager.add('section1', section[1])
+            manager.add('section2', section[2])
+            manager.add('section3', section[3])
+
+            manager.onChange('section1', 'open', () => {
+                const output = $(section[1]).find('#count')
+
+                const interval = setInterval(() => {
+                    let time = parseInt(output.text())
+                    if (time !== 0) {
+                        time--
+                        output.text(time)
+                    } else {
+                        clearInterval(interval)
+                        manager.change('section1', 'section2')
+                    }
+                }, 1000)
+            })
+
+            manager.onChange('section2', 'open', () => {
+                writerEffect($(section[2]).find('.writerEffectOutput'), data.manifest, 80, () => {
+                    setTimeout(() => {
+                        window.location.href = './flower.html'
+                    }, 500)
+                })
+            })
+
+            try {
+                writerEffect($(section[0]).find('.writerEffectOutput'), data.title, 80)
+            } catch (e) {
+                console.log('finish!')
+            }
+
+            new HandleButtonEvents(
+                $(section[0]).find('button'),
+                manager
+            )
+        })
+
+
+        function writerEffect(target, text, interval, onFinish=null) {
+            let i = 0
+
+            const writer = () => {
+                if (i < text.length && writerController) {
+                    target.append(text.charAt(i))
+                    i++
+                    setTimeout(writer, interval)
+                } else if (onFinish !== null) {
+                    onFinish()
+                }
+            }
+            writer()
+        }
+
+
+        class HandleButtonEvents {
+            constructor(button, manager) {
+                this.button = button
+                this.manager = manager
+
+                $(this.button).click(this.onClick.bind(this))
+            }
+            onClick() {
+                this.manager.change('section0', 'section1')
+            }
+        }
+
+
+        class ChangeSectionManager {
+            constructor(currentSectionName, currentSection, starsManager) {
+                this.sections = {}
+                this.sections[currentSectionName] = currentSection.parent()
+                this.starManager = starsManager
+
+                starsManager.createStars(100, this.sections[currentSectionName])
+            }
+            add(name, section) {
+                if (!(name in this.sections)) this.sections[name] = section.parent()
+            }
+            change(current, target) {
+                const _current = this.sections[current]
+                const _target = this.sections[target]
+
+                _current.css('display', 'none')
+
+                this.starManager.removeStars(_current)
+                this.starManager.createStars(100, _target)
+
+                _target.css('display', 'block')
+            }
+            onChange(name, on, callback) {
+                let targetNode = this.sections[name].get(0)
+
+                new MutationObserver((mutationList) => {
+                    for (let mutation of mutationList) {
+                        if (mutation.type === 'attributes' && mutation.attributeName === 'style') {
+                            const display = $(targetNode).css('display')
+
+                            switch (on) {
+                                case 'close':
+                                    if (display === 'none') callback()
+                                    break
+                                case 'open':
+                                    if (display === 'block') callback()
+                                    break
+                            }
+                        }
+                    }
+                }).observe(targetNode, {
+                    attributes: true,
+                    childList: true,
+                    subtree: true,
+                    attributeFilter: ['style']
+                })
+            }
+        }
+
+
+        class StarsManager {
+            removeStars(section) {
+                $(section).find('.star').remove()
+            }
+            createStars(numStars, section) {
+                for (let i = 0; i < numStars; i++) {
+                    const size = Math.random() * 3 // Tamanhos variados
+                    const x = Math.random() * 99 // Posições aleatórias
+                    const y = Math.random() * 99 // Posições aleatórias
+                    const duration = Math.random() * 3 + 1 // Duração do piscar aleatória entre 1 e 4 segundos
+
+                    const star = $('<div class="star"></div>')
+
+                    star.css({
+                        width: `${size}px`,
+                        height: `${size}px`,
+                        top: `${y}%`,
+                        left: `${x}%`,
+                        animation: `twinkling ${duration}s linear infinite`
+                    })
+                    $(section.find('.stars')).append(star)
+                }
+            }
+        }
     </script>
 </body>
 </html>
